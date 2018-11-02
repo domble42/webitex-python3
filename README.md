@@ -6,3 +6,7 @@ Please do not use this in this state.
 
 - Documentation: https://doc.zebitex.com/
 - OpenAPI specification: https://doc.zebitex.com/v1/swagger.json
+- Generate api keys:
+ - https://staging.zebitex.com/ (testing environnement)
+ - https://zebitex.com/profile/api-tokens (production environnement)
+ 
