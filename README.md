@@ -2,7 +2,7 @@
 Please do not use this in this state.
 
 # zebitex-python3
- Python3 wrapper for the webitex API v1. (zebitex.com/)
+ Python3 wrapper for the webitex API v1. (https://landing.zebitex.com/)
 
 - Documentation: https://doc.zebitex.com/
 - OpenAPI specification: https://doc.zebitex.com/v1/swagger.json
