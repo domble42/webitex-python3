@@ -21,22 +21,22 @@ my_zebitex = Zebitex("<access key>", "<secret key>", test_env)
 my_assets_balances = my_zebitex.funds()
 
 # open a new order
-#my_zebitex.new_order('ltc',     # quote currency
-#                    'btc',      # base currency
-#                    'ask',      # order side (bid or ask)
-#                    '0.321',    # price
-#                    '0.123',    # volume
-#                    'ltcbtc',   # market
-#                    'limit'     # order type
-#                    )
+my_zebitex.new_order('ltc',     # quote currency
+                    'btc',      # base currency
+                    'ask',      # order side (bid or ask)
+                    '0.321',    # price
+                    '0.123',    # volume
+                    'ltcbtc',   # market
+                    'limit'     # order type
+                    )
 
 # list open orders
 open_orders = my_zebitex.open_orders(page='1', per='11')
 print(open_orders)
 
 # cancel an opened order
-#order_id = 1234
-#cancel_order = my_zebitex.cancel_order(order_id)
+order_id = 1234
+cancel_order = my_zebitex.cancel_order(order_id)
 
 # Manage error
 try:
