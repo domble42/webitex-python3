@@ -1,14 +1,11 @@
 # zebitex-python3
 Python3 wrapper for webitex API v1 (https://landing.zebitex.com/).
+
 I am Not associated -- use at your own risk, etc.
 
 Installation
 -------------
 
-- for most recent stable release:
-`pip install zebitex-python3` # Not implemented yet.
-
-- for bleeding edge development:
 `pip install git+https://github.com/domble42/zebitex-python3.git`
 
 API Documentation
