@@ -7,7 +7,7 @@
 - Generate api keys for production environnement: https://zebitex.com/profile/api-tokens 
 
 # Work in progress
-|**PUBLIC / PRIVATE**|**Ressources**                      |**Method in wrapper **|**Developed**|**Documented**|**Tested**|
+|**PUBLIC / PRIVATE**|**Ressources**                      |**Associated method**|**Developed**|**Documented**|**Tested**|
 |:-------------------|:-----------------------------------|:---------------------------|:-:|:-:|:-:|
 PUBLIC               | `/orders/tickers`                  | `tickers`                  | ✔ | ✘ | ✘ |
 PUBLIC               | `/orders/ticker_summary/{market}`  | `ticker`                   | ✔ | ✘ | ✘ |
