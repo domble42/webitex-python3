@@ -30,7 +30,8 @@ UNKNOW (private)     | `/withdrawals`                     | `UNKNOW04()`        
 UNKNOW (private)     | `/orders/ticker_summary/{market}`  | `UNKNOW05()`               | ✘ | ✘ | ✘ |
 
 # TO DO
-- Make doc and test.
+- Documentation.
+- Tests.
 - Exception handler.
 - Packaging.
 - ...
