@@ -15,7 +15,6 @@ setup(
     long_description = open('README.md','r').read(),    
     keywords = ['zebitex', 'exchange', 'cryptocurrency', 'API', 'wrapper'],
     license = 'BSD 3-Clause License',
-    plateformes = 'ALL',
     url = 'https://github.com/domble42/zebitex-python3/',
     download_url = 'https://github.com/domble42/zebitex-python3/archive/master.zip'
 )
