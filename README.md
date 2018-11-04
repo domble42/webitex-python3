@@ -8,6 +8,45 @@ Installation
 
 `pip install git+https://github.com/domble42/zebitex-python3.git`
 
+Getting started
+-------------
+``` Python
+from zebitex import Zebitex, ZebitexError
+
+# instantiate your client
+test_env = True # set to False to use in production
+my_zebitex = Zebitex("<access key>", "<secret key>", test_env)
+
+# retrieve you assets balances
+my_assets_balances = my_zebitex.funds()
+
+# open a new order
+#my_zebitex.new_order('ltc',     # quote currency
+#                    'btc',      # base currency
+#                    'ask',      # order side (bid or ask)
+#                    '0.321',    # price
+#                    '0.123',    # volume
+#                    'ltcbtc',   # market
+#                    'limit'     # order type
+#                    )
+
+# list open orders
+open_orders = my_zebitex.open_orders(page='1', per='11')
+print(open_orders)
+
+# cancel an opened order
+#order_id = 1234
+#cancel_order = my_zebitex.cancel_order(order_id)
+
+# Manage error
+try:
+    # Another instance
+    my_bad_zebitex = Zebitex("<GOOD access key>", "<BAD secret key>", test_env)
+except ZebitexError as err:
+    # Show details of error
+    print("{}".format(err))
+```
+
 API Documentation
 -------------
 
@@ -16,8 +55,8 @@ API Documentation
 - Generate api keys for testing environnement: https://staging.zebitex.com/
 - Generate api keys for production environnement: https://zebitex.com/profile/api-tokens
 
-Work in progress
--------------
+API's resources -> Wrapper's methods
+------------------------------------
 
 |**Visiblity** |**Ressources**                     |**Associated method**       |**Developed**|**Documented**|**Tested**|
 |:-------------|:----------------------------------|:-------------------------|:-:|:-:|:-:|
