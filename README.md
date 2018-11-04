@@ -7,29 +7,29 @@
 - Generate api keys for production environnement: https://zebitex.com/profile/api-tokens 
 
 # Work in progress
-|**Path**|**Method**|**Developed**|**Documented**|**Tested**|
-|:---------------------------------|:---------------------------|:-:|:-:|:-:|
-`/orders/tickers`                  | `tickers`                  | ✔ | ✘ | ✘ |
-`/orders/ticker_summary/{market}`  | `ticker`                   | ✔ | ✘ | ✘ |
-`/orders/orderbook`                | `orderbook`                | ✔ | ✘ | ✘ |
-`/orders/trade_history`            | `public_trade_history`     | ✔ | ✘ | ✘ |
-`/funds`                           | `funds`                    | ✔ | ✘ | ✘ |
-`/history/trades`                  | `trade_history`            | ✔ | ✘ | ✘ |
-`/orders/current`                  | `open_order`               | ✔ | ✘ | ✘ |
-`/orders/cancel_all`               | `cancel_all_orders`        | ✔ | ✘ | ✘ |
-`/orders`                          | `new_order`                | ✔ | ✘ | ✘ |
-` `                                | ` `                        |   |   |   |
-`/accounts`                        | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/diagrams/history`                | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/funds/history`                   | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/history/account`                 | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/history/orders`                  | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/history/download/{file_name}`    | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/orders/day_history`              | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/orders/{id}/cancel`              | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/withdrawals`                     | `UNKNOW`                   | ✘ | ✘ | ✘ |
-`/orders/ticker_summary/{market}`  | `UNKNOW`                   | ✘ | ✘ | ✘ |
+|**Public/Private**|**Ressources**                      |**Method in wrapper **|**Developed**|**Documented**|**Tested**|
+|:-----------------|:-----------------------------------|:---------------------------|:-:|:-:|:-:|
+Public             | `/orders/tickers`                  | `tickers`                  | ✔ | ✘ | ✘ |
+Public             | `/orders/ticker_summary/{market}`  | `ticker`                   | ✔ | ✘ | ✘ |
+Public             | `/orders/orderbook`                | `orderbook`                | ✔ | ✘ | ✘ |
+Public             | `/orders/trade_history`            | `public_trade_history`     | ✔ | ✘ | ✘ |
+Private            | `/funds`                           | `funds`                    | ✔ | ✘ | ✘ |
+Private            | `/funds/history`                   | `funding_history`          | ✘ | ✘ | ✘ |
+Private            | `/history/account`                 | `account_history`          | ✘ | ✘ | ✘ |
+Private            | `/history/orders`                  | `order_history`            | ✘ | ✘ | ✘ |
+Private            | `/history/trades`                  | `trade_history`            | ✔ | ✘ | ✘ |
+Public             | `/orders/current`                  | `open_order`               | ✔ | ✘ | ✘ |
+Public             | `/orders/cancel_all`               | `cancel_all_orders`        | ✔ | ✘ | ✘ |
+Public             | `/orders/{id}/cancel`              | `cancel_order`             | ✘ | ✘ | ✘ |
+Public             | `/orders`                          | `new_order`                | ✔ | ✘ | ✘ |           | ` `                           
+UNKNOW             | `/accounts`                        | `UNKNOW`                   | ✘ | ✘ | ✘ |
+UNKNOW             | `/diagrams/history`                | `UNKNOW`                   | ✘ | ✘ | ✘ |
+UNKNOW             | `/history/download/{file_name}`    | `UNKNOW`                   | ✘ | ✘ | ✘ |
+UNKNOW             | `/orders/day_history`              | `UNKNOW`                   | ✘ | ✘ | ✘ |
+UNKNOW             | `/withdrawals`                     | `UNKNOW`                   | ✘ | ✘ | ✘ |
+UNKNOW             | `/orders/ticker_summary/{market}`  | `UNKNOW`                   | ✘ | ✘ | ✘ |
 
 # TO DO
-- logger
-- meta programming.
+- Make doc and test.
+- Exception handler.
+- Packaging.
