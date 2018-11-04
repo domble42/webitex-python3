@@ -29,3 +29,7 @@
 `/orders/{id}/cancel`              | `UNKNOW`                   | ✘ | ✘ | ✘ |
 `/withdrawals`                     | `UNKNOW`                   | ✘ | ✘ | ✘ |
 `/orders/ticker_summary/{market}`  | `UNKNOW`                   | ✘ | ✘ | ✘ |
+
+# TO DO
+- logger
+- meta programming.
