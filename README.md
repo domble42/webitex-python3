@@ -30,8 +30,9 @@ UNKNOW (private)     | `/withdrawals`                     | `UNKNOW04()`        
 UNKNOW (private)     | `/orders/ticker_summary/{market}`  | `UNKNOW05()`               | ✘ | ✘ | ✘ |
 
 # TO DO
-- Documentation.
-- Tests.
-- Exception handler.
-- Packaging.
+- Factoring
+- Documentation
+- Tests
+- Exception handler
+- Packaging
 - ...
