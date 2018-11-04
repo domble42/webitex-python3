@@ -9,27 +9,28 @@
 # Work in progress
 |**Public/Private**|**Ressources**                      |**Method in wrapper **|**Developed**|**Documented**|**Tested**|
 |:-----------------|:-----------------------------------|:---------------------------|:-:|:-:|:-:|
-Public             | `/orders/tickers`                  | `tickers`                  | ✔ | ✘ | ✘ |
-Public             | `/orders/ticker_summary/{market}`  | `ticker`                   | ✔ | ✘ | ✘ |
-Public             | `/orders/orderbook`                | `orderbook`                | ✔ | ✘ | ✘ |
-Public             | `/orders/trade_history`            | `public_trade_history`     | ✔ | ✘ | ✘ |
-Private            | `/funds`                           | `funds`                    | ✔ | ✘ | ✘ |
-Private            | `/funds/history`                   | `funding_history`          | ✘ | ✘ | ✘ |
-Private            | `/history/account`                 | `account_history`          | ✘ | ✘ | ✘ |
-Private            | `/history/orders`                  | `order_history`            | ✘ | ✘ | ✘ |
-Private            | `/history/trades`                  | `trade_history`            | ✔ | ✘ | ✘ |
-Public             | `/orders/current`                  | `open_order`               | ✔ | ✘ | ✘ |
-Public             | `/orders/cancel_all`               | `cancel_all_orders`        | ✔ | ✘ | ✘ |
-Public             | `/orders/{id}/cancel`              | `cancel_order`             | ✘ | ✘ | ✘ |
-Public             | `/orders`                          | `new_order`                | ✔ | ✘ | ✘ |           | ` `                           
-UNKNOW             | `/accounts`                        | `UNKNOW`                   | ✘ | ✘ | ✘ |
-UNKNOW             | `/diagrams/history`                | `UNKNOW`                   | ✘ | ✘ | ✘ |
-UNKNOW             | `/history/download/{file_name}`    | `UNKNOW`                   | ✘ | ✘ | ✘ |
-UNKNOW             | `/orders/day_history`              | `UNKNOW`                   | ✘ | ✘ | ✘ |
-UNKNOW             | `/withdrawals`                     | `UNKNOW`                   | ✘ | ✘ | ✘ |
-UNKNOW             | `/orders/ticker_summary/{market}`  | `UNKNOW`                   | ✘ | ✘ | ✘ |
+PUBLIC             | `/orders/tickers`                  | `tickers`                  | ✔ | ✘ | ✘ |
+PUBLIC             | `/orders/ticker_summary/{market}`  | `ticker`                   | ✔ | ✘ | ✘ |
+PUBLIC             | `/orders/orderbook`                | `orderbook`                | ✔ | ✘ | ✘ |
+PUBLIC             | `/orders/trade_history`            | `public_trade_history`     | ✔ | ✘ | ✘ |
+PRIVATE            | `/funds`                           | `funds`                    | ✔ | ✘ | ✘ |
+PRIVATE            | `/funds/history`                   | `funding_history`          | ✘ | ✘ | ✘ |
+PRIVATE            | `/history/account`                 | `account_history`          | ✘ | ✘ | ✘ |
+PRIVATE            | `/history/orders`                  | `order_history`            | ✘ | ✘ | ✘ |
+PRIVATE            | `/history/trades`                  | `trade_history`            | ✔ | ✘ | ✘ |
+PRIVATE            | `/orders/current`                  | `open_order`               | ✔ | ✘ | ✘ |
+PRIVATE            | `/orders/cancel_all`               | `cancel_all_orders`        | ✔ | ✘ | ✘ |
+PRIVATE            | `/orders/{id}/cancel`              | `cancel_order`             | ✘ | ✘ | ✘ |
+PRIVATE            | `/orders`                          | `new_order`                | ✔ | ✘ | ✘ |           | ` `                           
+UNKNOW (private)   | `/accounts`                        | `UNKNOW00`                 | ✘ | ✘ | ✘ |
+UNKNOW (private)   | `/diagrams/history`                | `UNKNOW01`                 | ✘ | ✘ | ✘ |
+UNKNOW (private)   | `/history/download/{file_name}`    | `UNKNOW02`                 | ✘ | ✘ | ✘ |
+UNKNOW (private)   | `/orders/day_history`              | `UNKNOW03`                 | ✘ | ✘ | ✘ |
+UNKNOW (private)   | `/withdrawals`                     | `UNKNOW04`                 | ✘ | ✘ | ✘ |
+UNKNOW (private)   | `/orders/ticker_summary/{market}`  | `UNKNOW05`                 | ✘ | ✘ | ✘ |
 
 # TO DO
 - Make doc and test.
 - Exception handler.
 - Packaging.
+- ...
