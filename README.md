@@ -1,7 +1,7 @@
 # zebitex-python3
 Python3 wrapper for webitex API v1 (https://landing.zebitex.com/).
 
-I am Not associated -- use at your own risk, etc.
+I am not associated -- use at your own risk, etc.
 
 Installation
 -------------
