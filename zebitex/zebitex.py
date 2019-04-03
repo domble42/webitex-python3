@@ -57,6 +57,7 @@ class Zebitex():
         """
 
         """
+        status_code_list = [200, 201, 204]
         user_agent = {"User-Agent": "zebitex-python3 0.0.1 alpha version"}
         authorization_header = {}
         params = {k: str(v) for k,v in params.items()} if params else None
@@ -68,9 +69,12 @@ class Zebitex():
         status = {'status_code': r.status_code}
         if r.status_code >= 500:
             raise ZebitexError(status)
-        if r.status_code is not 200 and r.status_code is not 204:
+        if r.status_code not in status_code_list:
             raise ZebitexError({**status, **r.json()['error']})
-        return r.json()
+        if r.status_code is 200 or r.status_code is 201:
+            return r.json()
+        else:
+            return True
 
     #
     # Public methods
